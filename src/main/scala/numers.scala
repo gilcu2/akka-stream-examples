@@ -2,16 +2,16 @@
 import akka.stream._
 import akka.stream.scaladsl._
 
-import akka.{ NotUsed, Done }
+import akka.{NotUsed, Done}
 import akka.actor.ActorSystem
 import akka.util.ByteString
 import scala.concurrent._
 import scala.concurrent.duration._
 import java.nio.file.Paths
 
-object Stream1 {
+object Numbers {
 
-  def main(args:Array[String]) = {
+  def main(args: Array[String]) = {
 
     implicit val system = ActorSystem("QuickStart")
     implicit val materializer = ActorMaterializer()
